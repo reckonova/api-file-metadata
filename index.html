@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>File Metadata Microservice</title>
+    <link href="/public/meta-style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>File Metadata Microservice</h2>
+
+      <section>
+        <h3>Explanation:</h3>
+        <ol>
+          <li>With this tool, you can submit a form object that includes a file upload.</li>
+          <li>
+            When you submit something, you will receive the file name, and size in
+            bytes within what's called a JSON response. Also included for your convienence is the file type.
+          </li>
+        </ol>
+        <ol>
+          <form method="post" action="/upload" enctype="multipart/form-data">
+            <input
+              id="file-uploader"
+              type="file"
+              name="upfile"
+              multiple="false"
+              required="true"
+            />
+            <button type="submit" value="Submit">Submit</button>
+            <button type="reset" class="btn btn-warning">Clear</button>
+          </form>
+        </ol>
+
+        <h3>Example Usage:</h3>
+      </section>
+    </div>
+  </body>
+</html>
